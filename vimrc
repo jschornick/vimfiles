@@ -10,7 +10,6 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
-"Bundle 'colorschemes'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'tpope/vim-fugitive'
 Bundle 'junegunn/seoul256.vim'
@@ -88,15 +87,10 @@ let g:matchparen_insert_timeout = 5
 
 " === Colors ===
 set t_Co=256
-"autocmd VimEnter * GuiColorScheme sublime
-"autocmd VimEnter * GuiColorScheme sashaDark
 "colorscheme jellybeans
 "colorscheme ir_black
 "colorscheme synic
-"colorscheme synic_mod
-"colorscheme 256_asu1dark   " contrasty!
 "colorscheme tir_black
-"colorscheme tchaba2  " comments too dark
 
 "colorscheme desert256
 "

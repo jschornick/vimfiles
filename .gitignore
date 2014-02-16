@@ -1,3 +1,16 @@
 swap/
-bundle/
 .netrwhist
+
+# We're using vundle
+bundle/
+plugin/
+
+# latex suite 
+compiler/tex.vim
+indent/tex.vim
+*latexSuite*
+*latex-suite*
+*latexhelp.txt.*
+
+doc/*.txt.gz
+doc/tags
