@@ -127,7 +127,9 @@ let g:indent_guides_start_level = 2
 
 " Quiet YCM warnings when using C++
 let g:ycm_confirm_extra_conf = 0
-
+nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
+let g:ycm_autoclose_preview_window_after_completion=1
+"let g:ycm_autoclose_preview_window_after_insertion=1
 
 " === Plugin :  latexsuite ===
 filetype plugin on
