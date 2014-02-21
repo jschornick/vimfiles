@@ -62,7 +62,8 @@ set hlsearch
 set gdefault    " global replace by default
 " clear search highlight
 nnoremap <leader><space> :noh<cr>
-
+" don't move on word-under-cursor search, just search and highlight
+nmap <silent>* :let @/ = '\<'.expand('<cword>').'\>'\|set hlsearch<C-M>
 
 " === Navigation ===
 
