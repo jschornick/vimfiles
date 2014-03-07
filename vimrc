@@ -17,6 +17,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'bling/vim-airline'
 Bundle 'bling/vim-bufferline'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " ReStructredText plugins
 "Bundle 'Rykka/riv.vim'
@@ -85,6 +86,31 @@ nnoremap <SID>I_won’t_ever_type_this <Plug>IMAP_JumpForward
 filetype indent plugin on
 syntax on
 let g:matchparen_insert_timeout = 5
+au BufRead,BufNewFile *.p set filetype=pasm
+
+" PRU assembly
+"au BufNewFile,BufRead *.p set filetype=asm
+
+nmap <Leader>r :RainbowParenthesesToggleAll<CR>
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['red',         'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['yellow',        'RoyalBlue3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ]
+
 
 " === Colors ===
 set t_Co=256
